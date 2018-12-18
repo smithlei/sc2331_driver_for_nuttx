@@ -75,7 +75,7 @@ int sc2331_initialize(void)
 
 	sprdwl_cmd_init();
 
-	memset(sc2331, 0, sizeof(*sc2331));
+	memset(sc2331, 0xf, sizeof(*sc2331));
 
 	memcpy(net_dev->d_ifname, "wlan0", 6);
 	net_dev->d_ifup = sc2331_ifup;
