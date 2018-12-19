@@ -37,7 +37,7 @@ int sprdwl_cmd_init(void)
 {
 	memset(&cmd, 0, sizeof(struct sprdwl_cmd_info));
 
-	return 0;
+	return 1;
 }
 
 int wlan_cmd_mac_open(unsigned char vif_id, unsigned char mode,
